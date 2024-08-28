@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+    <script src="https://kit.fontawesome.com/3662afde41.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="mini-navigation" id="miniNavigation">
+        <div class="mini-block">
+            <a class="mini-menu" href="menu.html">Menu</a> <i class="fa-solid fa-chevron-up" id="arrowDown" onclick="arrowDown()"></i>
+        </div>
+        <div class="mini-sub-block" id="miniSubBlock">
+            <a class="mini-submenus" href="lunch special.html">Lunch Special</a>
+            <a class="mini-submenus" href="entree.html">Entree</a>
+            <a class="mini-submenus" href="curry.html">Curry</a>
+            <a class="mini-submenus" href="noodles.html">Noodles</a>
+            <a class="mini-submenus" href="main.html">Main</a>
+            <a class="mini-submenus" href="rice bowl.html">Rice Bowl</a>
+            <a class="mini-submenus" href="sushi.html">Sushi</a>
+            <a class="mini-submenus" href="specials.html">Specials</a>
+            <a class="mini-submenus" href="dessert.html">Desert</a>
+        </div>
+        <div class="mini-block">
+            <a class="platters" href="platters.html">Platters</a>
+        </div>
+        <div class="mini-block">
+            <a class="locations" href="locations.html">Location/Hours</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="navbar">
+            <a id="logo" href="index.html">
+                <img src="images/kinoto logo.png" alt="Kinoto Logo">
+            </a>
+            <div class="hamburger" id="hamburgerIcon" onclick="displayNavigation()"><span class="span1"></span><span class="span2"></span><span class="span3"></span></div>
+            <div class="navigation">
+                <div class="navmenu">
+                    <a id="mainmenu", href="menu.html">Menu <i class="fa-solid fa-chevron-up" id="menuArrowDown"></i></a>
+                    <div class="submenu">
+                        <div class="nav-column">
+                            <a class="submenus" id="lunch special" href="lunch special.html">Lunch Special</a>
+                            <a class="submenus" id="entree" href="entree.html">Entree</a>
+                            <a class="submenus" id="curry" href="curry.html">Curry</a>
+                            <a class="submenus" id="noodles" href="noodles.html">Noodles</a>
+                            <a class="submenus" id="mainfood" href="main.html">Main</a>
+                        </div>
+                        <div class="nav-column">
+                            <a class="submenus" id="rice bowl" href="rice bowl.html">Rice Bowl</a>
+                            <a class="submenus" id="sushi" href="sushi.html">Sushi</a>
+                            <a class="submenus" id="specials" href="specials.html">Specials</a>
+                            <a class="submenus" id="desert" href="dessert.html">Desert</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+                <a class="platters" href="platters.html">Platters</a>
+                <div class="vertical-line"></div>
+                <a class="locations" href="locations.html">Location/Hours</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="mainmenubox">
+            <h1>Trading Hours</h1>
+            <p>Mon - Sat</p>
+            <p class="lunch">Lunch 11:30 - 2:30</p>
+            <p class="dinner">Dinner 17:00 - 21:00</p>
+            <p>Sun</p>
+            <p>Closed</p>
+            <h1>Location</h1>
+            <p>2/110 Laver Dr, Robina QLD 4226</p>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.463972161762!2d153.3771551756514!3d-28.0713870426105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b911cba81560665%3A0x8efc512870aaa547!2sShop%202%2F110%20Laver%20Dr%2C%20Robina%20QLD%204226!5e0!3m2!1sen!2sau!4v1713733429535!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <div class="phone-mail">
+                    <div class="phone">
+                        <a class="phone-container" href="tel:+07 5578 9016">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>07 5578 9016</p>
+                        </a>
+                    </div>
+                    <div class="email">
+                        <a class="mail-container" href="mailto:kinoto.robina@yahoo.com.au">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>kinoto.robina@yahoo.com.au</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="follow">
+                <h3>Follow Us</h3>
+                <a class="facebook" href="https://www.facebook.com/kinotojapaneserestaurant" target="_blank">
+                    <img src="images/Facebook_Logo_Primary.png" alt="facebook">
+                </a>
+            </div>
+            <p class="copyright">&copy; Kinoto 2012</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+    <script src="https://kit.fontawesome.com/3662afde41.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="mini-navigation" id="miniNavigation">
+        <div class="mini-block">
+            <a class="mini-menu" href="menu.html">Menu</a> <i class="fa-solid fa-chevron-up" id="arrowDown" onclick="arrowDown()"></i>
+        </div>
+        <div class="mini-sub-block" id="miniSubBlock">
+            <a class="mini-submenus" href="lunch special.html">Lunch Special</a>
+            <a class="mini-submenus" href="entree.html">Entree</a>
+            <a class="mini-submenus" href="curry.html">Curry</a>
+            <a class="mini-submenus" href="noodles.html">Noodles</a>
+            <a class="mini-submenus" href="main.html">Main</a>
+            <a class="mini-submenus" href="rice bowl.html">Rice Bowl</a>
+            <a class="mini-submenus" href="sushi.html">Sushi</a>
+            <a class="mini-submenus" href="specials.html">Specials</a>
+            <a class="mini-submenus" href="dessert.html">Desert</a>
+        </div>
+        <div class="mini-block">
+            <a class="platters" href="platters.html">Platters</a>
+        </div>
+        <div class="mini-block">
+            <a class="locations" href="locations.html">Location/Hours</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="navbar">
+            <a id="logo" href="index.html">
+                <img src="images/kinoto logo.png" alt="Kinoto Logo">
+            </a>
+            <div class="hamburger" id="hamburgerIcon" onclick="displayNavigation()"><span class="span1"></span><span class="span2"></span><span class="span3"></span></div>
+            <div class="navigation">
+                <div class="navmenu">
+                    <a id="mainmenu", href="menu.html">Menu <i class="fa-solid fa-chevron-up" id="menuArrowDown"></i></a>
+                    <div class="submenu">
+                        <div class="nav-column">
+                            <a class="submenus" id="lunch special" href="lunch special.html">Lunch Special</a>
+                            <a class="submenus" id="entree" href="entree.html">Entree</a>
+                            <a class="submenus" id="curry" href="curry.html">Curry</a>
+                            <a class="submenus" id="noodles" href="noodles.html">Noodles</a>
+                            <a class="submenus" id="mainfood" href="main.html">Main</a>
+                        </div>
+                        <div class="nav-column">
+                            <a class="submenus" id="rice bowl" href="rice bowl.html">Rice Bowl</a>
+                            <a class="submenus" id="sushi" href="sushi.html">Sushi</a>
+                            <a class="submenus" id="specials" href="specials.html">Specials</a>
+                            <a class="submenus" id="desert" href="dessert.html">Desert</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+                <a class="platters" href="platters.html">Platters</a>
+                <div class="vertical-line"></div>
+                <a class="locations" href="locations.html">Location/Hours</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="menu-image-container">
+            <div class="menu-header-image">
+                <img class="child-menu-header-image1" src="images/9pc sashimi 2.jpg" alt="Salmon Sashimi 9pc">
+            </div>
+            <div class="menu-header-image">
+                <img class="child-menu-header-image2" src="images/white dragon 2.jpg" alt="White Dragon">
+            </div>
+            <div class="menu-header-image">
+                <img class="child-menu-header-image1" src="images/Kinoto roll.jpg" alt="Kinoto Roll with a lot">
+            </div>
+            <div class="menu-header-image">
+                <img class="child-menu-header-image2" src="images/katsu avo 4.jpg" alt="Chicken Cutlet & Avocado Roll">
+            </div>
+        </div>
+
+        <div class="scrolling-menu">
+            <div><a class="scrolling-child" href="lunch special.html">Lunch Special</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="entree.html">Entree</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="curry.html">Curry</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="noodles.html">Noodles</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="main.html">Main</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="rice bowl.html">Rice Bowl</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="sushi.html">Sushi</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="specials.html">Specials</a></div>
+            <div class="vertical-line"></div>
+            <div><a class="scrolling-child" href="dessert.html">Dessert</a></div>
+        </div>
+        <div class="horizontal-line"></div>
+        
+        <div class="mainmenubox">
+            <h2 class="menutitle">Sushi</h2>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>56. Sashimi Salmon 5pc <span class="price">$12.9</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/5pc sashimi.jpg" alt="Sashimi Salmon 5pc" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>57. Sashimi Salmon 9pc <span class="price">$19.9</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/9pc sashimi 2.jpg" alt="Sashimi Salmon 9pc" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>58. Fresh Salmon Nigiri (2pc) <span class="price">$6.5</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/salmon nigiri kitanai.jpg" alt="Fresh Salmon Nigiri" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>59. Seared Salmon Nigiri (2pc) <span class="price">$7</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/seared salmon nigiri.jpg" alt="Seared Salmon Nigiri" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>60. Hosomaki Cucumber (6pc) <span class="price">$5.5</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/hosomaki cucumber.jpg" alt="Hosomaki Cucumber" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>61. Hosomaki Avocado <span class="price">$5.5</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/hosomaki avo 2.jpg" alt="Hosomaki Avocado" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>62. Hosomaki Cooked Tuna <span class="price">$6</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/hosomaki tuna 2.jpg" alt="Hosomaki Cooked Tuna" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>63. Hosomaki Salmon <span class="price">$6.5</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/hosomaki salmon.jpg" alt="Hosomaki Salmon" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>64. Vegetable Roll (6pc) <span class="price">$11.9</span></h4>
+                            <p>Lettuce, cucumber, carrot, avocado.</p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/vegetable roll.jpg" alt="Vegetable Roll" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>65. Cooked Tuna & Avocado Roll (8pc) <span class="price">$13.9</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/tunaavo.jpg" alt="Cooked Tuna & Avocado Roll" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>66. Teriyaki Chicken & Avocado Roll (8pc) <span class="price">$13.9</span></h4>
+                            <p>Topped with mayonnaise, teriyaki sauce and ecshallot.</p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/teriavo 2.jpg" alt="Teriyaki Chicken & Avocado Roll" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>67. Chicken Cutlet & Avocado Roll (8pc) <span class="price">$13.9</span></h4>
+                            <p></p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/katsu avo 4.jpg" alt="Chicken Cutlet & Avocado Roll" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>68. Salmon & Avocado Roll (8pc) <span class="price">$14.9</span></h4>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/salmon avo 2.jpg" alt="Salmon & Avocado Roll" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>69. California Roll (8pc) <span class="price">$14.9</span></h4>
+                            <p>Fish eggs, prawn, avocado, cucumber and mayonnaise.</p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/california roll 2.jpg" alt="California Roll" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>70. Red Dragon (8pc) <span class="price">$15.9</span></h4>
+                            <p>Fresh salmon, avocado, cucumber, mayonnaise and chilli.</p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/red dragon 2.jpg" alt="Red Dragon" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>71. Pink Dragon (8pc) <span class="price">$16.9</span></h4>
+                            <p>Fresh salmon, prawn, avocado, cucumber, mayonnaise and fish eggs.</p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/pink dragon.jpg" alt="Pink Dragon" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menurow">
+                    <div class="menu">
+                        <div class="description">
+                            <h4>72. White Dragon (8pc) <span class="price">$17.9</span></h4>
+                            <p>Seared salmon, prawn, avocado, cucumber, cream cheese, myonnaise, fish eggs and ecshallot.</p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/white dragon 2.jpg" alt="White Dragon" onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="description">
+                            <h4>73. Kinoto Roll wiht a lot (8pc) <span class="price">$22.9</span></h4>
+                            <p>Deep Fried Prawn, fresh salmon, teriyaki chicken, cooked prawn, fish eggs, avocado, cucumber and mixed vegetables.</p>
+                        </div>
+                        <div class="child-menu-images">
+                            <img src="images/kinoto roll 2.jpg" alt="Kinoto Roll with a lot"  onclick="imageClick(this)">
+                            <span class="dot"></span>
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="large-image-box">
+            <img src="" alt="" id="large-image">
+            <i class="fa-solid fa-right-from-bracket fa-5x" onclick="exitButton()"></i>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <div class="phone-mail">
+                    <div class="phone">
+                        <a class="phone-container" href="tel:+07 5578 9016">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>07 5578 9016</p>
+                        </a>
+                    </div>
+                    <div class="email">
+                        <a class="mail-container" href="mailto:kinoto.robina@yahoo.com.au">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>kinoto.robina@yahoo.com.au</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="follow">
+                <h3>Follow Us</h3>
+                <a class="facebook" href="https://www.facebook.com/kinotojapaneserestaurant" target="_blank">
+                    <img src="images/Facebook_Logo_Primary.png" alt="facebook">
+                </a>
+            </div>
+            <p class="copyright">&copy; Kinoto 2012</p>
+        </div>
+    </footer>
+</body>
+</html>
